@@ -1,0 +1,156 @@
+<html>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const selectElement = document.querySelector('#restaurants');
+            const nobuElement = document.querySelector('#nobu-menu');
+            selectElement.addEventListener('change', (event) => {
+                const selectedMenu = `${event.target.value}`;
+                console.log(selectedMenu);
+                if (selectedMenu == "nobu") {
+                    nobuElement.style.display = "initial";
+                    document.querySelector('#urthcaffe-menu').style.display = "none";
+                    document.querySelector('#pfchangs-menu').style.display = "none";
+                } else if (selectedMenu == "urthcaffe") {
+                    nobuElement.style.display = "none";
+                    document.querySelector('#urthcaffe-menu').style.display = "initial";
+                    document.querySelector('#pfchangs-menu').style.display = "none";
+                } else if (selectedMenu == "pfchangs") {
+                    nobuElement.style.display = "none";
+                    document.querySelector('#urthcaffe-menu').style.display = "none";
+                    document.querySelector('#pfchangs-menu').style.display = "initial";
+                } else {
+                    nobuElement.style.display = "none";
+                    document.querySelector('#urthcaffe-menu').style.display = "none";
+                    document.querySelector('#pfchangs-menu').style.display = "none";
+                }
+            });
+        });
+    </script>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mainDiv">
+            <div class="homeLinkDiv"><a class="homeLink" href="index.html">Home</a></div>
+            <h3>Wecome to my food page!</h3>
+            <label for="restaurants">Choose a restaurant:</label>
+            <select name="restaurants" id="restaurants">
+                <option value="selectvalue">SELECT MENU</option>
+                <option value="nobu">nobu</option>
+                <option value="urthcaffe">urth caffe</option>
+                <option value="pfchangs">pf chang's</option>
+            </select>
+
+           <div class="menuDiv" id="nobu-menu">
+            <table class="table table-striped">
+                <thead>
+                    <tr><th style="width:25%">Image</th>
+                        <th>Item</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img class="menuimg" src="sushi.jpg"></td>
+                        <td>
+                            <h3>Sushi Rolls</h3>
+                            <p>
+                                Perfect combo of vegetables!
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="menuimg" src="shishito_peppers.jpg"></td>
+                        <td><h3>Shishito Peppers</h3> <p>for spice lovers!</p></td>
+
+                    </tr>
+                    <tr>
+                        <td><img class="menuimg" src="gelato.jpg"></td>
+                        <td>
+                            <h3>Gelato</h3>
+                            <p>
+                                Not too sweet but light and creamy! Heaven!
+                            </p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+           </div>
+
+           <div class="menuDiv" id="urthcaffe-menu">
+            <table class="table table-striped">
+                <thead>
+                    <tr><th style="width:25%">Image</th>
+                        <th>Item</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img class="menuimg" src="pizza.jpg"></td>
+                        <td>
+                            <h3>honey butter crust pizza</h3>
+                            <p>
+                                the perfect level of crispiness in the crust!
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="menuimg" src="toast.jpg"></td>
+                        <td><h3>Avocado Toast</h3> <p>Urth's Avocado Toast is the perfect afternoon treat - ancient grain bread toasted and topped with ripe Hass avocados, almond cheese, micro cilantro and olive oil.</p></td>
+
+                    </tr>
+                    <tr>
+                        <td><img class="menuimg" src="panini.jpg"></td>
+                        <td>
+                            <h3>Vegan Panini Portabella</h3>
+                            <p>
+                                Grilled portabella mushrooms, roasted peppers, wild arugula, grilled artichokes with pesto and almond cheese spread.
+                            </p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+           </div>
+
+           <div class="menuDiv" id="pfchangs-menu">
+            <table class="table table-striped">
+                <thead>
+                    <tr><th style="width:25%">Image</th>
+                        <th>Item</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img class="menuimg" src="coconutcooler.jpg"></td>
+                        <td>
+                            <h3>coconut cooler</h3>
+                            <p>
+                                the most refreshing drink you'll ever have! reminds me of hawaii!
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="menuimg" src="lettucewrap.jpg"></td>
+                        <td><h3>vegetarian lettuce wraps</h3> <p>crunchy, juicy and spicy!</p></td>
+
+                    </tr>
+                    <tr>
+                        <td><img class="menuimg" src="eggplant.jpg"></td>
+                        <td>
+                            <h3>stir-fried eggplant</h3>
+                            <p>
+                                perfect combo of juicy and spicy!
+                            </p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+           </div>
+        </div>
+    </body>
+</html>

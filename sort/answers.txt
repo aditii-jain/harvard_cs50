@@ -1,0 +1,20 @@
+sort1 uses: bubble sort
+
+How do you know?: runtime is substantially less when the list is already sorted
+                  (which is the best case scenario) and runtime is higher than sort3
+                  when the list is reversed.
+
+
+sort2 uses: merge sort
+
+How do you know?: the time taken to sort reversed and random lists is the
+                  least when using this algorithm and we know that the runtime
+                  for this algorithm is in the order of theta (n logn) which is
+                  the least in comparison to sort1 and sort3.
+
+sort3 uses: selection sort
+
+How do you know?: sort3 takes the most time in sorting through an already
+                  sorted list and we know that the runtime for selection sort
+                  is the same for a sorted and an unsorted list of the same
+                  size (theta(n^2)).

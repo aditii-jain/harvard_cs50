@@ -1,0 +1,62 @@
+body {
+    background-color: #faa;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    font-family: math;
+}
+
+.mainDiv {
+    text-align: center;
+    margin-top: 0.2em;
+}
+
+.header {
+    margin-bottom: 0.4em;
+}
+
+.homeLinkDiv {
+    float: left;
+    margin-left: 0.2em;
+    margin-bottom: 2em;
+}
+
+.homeLink {
+    color: gray;
+    text-decoration-line: none;
+}
+
+.menuDiv {
+    margin:auto;
+    display:none;
+
+}
+
+.menuimg {
+    max-width: 12em;
+    height: auto;
+}
+
+html,body{
+    height:90%;
+ }
+ .carousel,.item,.active{
+    height:90%;
+  }
+ .carousel-inner{
+     height:90%;
+ }
+
+.beautyimg {
+    max-width: 17em;
+    height: auto;
+}
+
+.card {
+    width: 18rem;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
